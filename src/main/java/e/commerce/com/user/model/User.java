@@ -1,6 +1,7 @@
 package e.commerce.com.user.model;
 
 
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.GeneratedValue;
