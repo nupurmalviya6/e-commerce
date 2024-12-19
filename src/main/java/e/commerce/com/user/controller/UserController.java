@@ -16,12 +16,8 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("/user/{id}")
-    public String getUserDetails(@PathVariable Integer id){
-
-
-        return userService.getUserDetails(id);
-
-
+    public ResponseEntity<User> getUserDetails(@PathVariable Integer id){
+        return ResponseEntity.ok(userService.getUserDetails(id));
     }
 
     @PostMapping("/user")

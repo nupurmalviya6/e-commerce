@@ -12,8 +12,8 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    public String getUserDetails(Integer id) {
-        return "Nupur";
+    public User getUserDetails(Integer id) {
+        return userRepository.findById(id);
     }
 
     public User addUser(UserDto userDto) {
